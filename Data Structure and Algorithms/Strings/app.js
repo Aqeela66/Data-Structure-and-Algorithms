@@ -31,7 +31,7 @@ function insertAtStart(name) {
 insertAtStart(books);
 console.log(books);
 
-// function for pop
+// function for push
 function insertAtEnd(name) {
     books.length = books.length + 1;
     books[books.length - 1] = {
