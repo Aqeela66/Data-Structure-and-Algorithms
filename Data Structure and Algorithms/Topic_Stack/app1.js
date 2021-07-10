@@ -2,17 +2,19 @@
  Initialize it with an array which will be used to store values and a size property that will be used to track the size of stack. */
 
 class Stack {
-    //Array is used to implement stack
     constructor() {
         this.items = [];
-        this.size = 5;
-        // Functions to be implemented
-        // push(item)
-        // pop()
-        // peek()
-        // printStack()
+        this.size = 10;
     }
+    printStack() {
 
-
+        for (let i = 0; i < this.items.length; i++) {
+            console.log(this.items[i]);
+        }
+    }
+    size() {
+        return this.size;
+    }
 }
-//console.log(this.size());
+
+let myStack = new Stack();

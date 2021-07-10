@@ -1,17 +1,16 @@
 /*Implement following methods:
-clear: a method that clears stack
-toString: a method that converts all members of stack into string */
+clear: a method that clears queue
+toString: a method that converts all members of queue into string */
 
-class Stack {
+class Queue {
     constructor() {
-        this.items = ["Karachi", "Lahore"];
-        this.size = 10;
+        this.items = [1, 2, 3, 4, 5];
     }
 
-    stackclear() {
+    clear() {
         this.items = []
         this.size = 0;
-        console.log('Stack is cleared!')
+        console.log('Queue is cleared!')
         return this.items;
     }
 
@@ -20,7 +19,7 @@ class Stack {
         str = this.items.toString();
         console.log(str);
     }
-    printStack() {
+    printQueue() {
 
         for (let i = 0; i < this.items.length; i++) {
             console.log(this.items[i]);
@@ -28,6 +27,8 @@ class Stack {
     }
 }
 
-let mystack = new Stack();
-mystack.toStringMethod();
-mystack.stackclear();
+let queue = new Queue();
+queue.toStringMethod();
+
+queue.clear();
+console.log(queue.items);
